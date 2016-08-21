@@ -52,6 +52,30 @@ Admin.js
       location2: currentLocation[2]+"-"+currentLocation[3], 
 ]
 2. Fetch records from DB and fill it in drop down
+Job.js
+[
+ Line#239
+      /*Newly added for fetching country/location 1/ location 2 details*/
+      var countryList = new mongoose.Schema({
+          country: String,
+          location1: String,
+          location2: String
+      });
+
+      countryList.getCountry = function(){
+        console.log("Add country");
+          return this.find().populate('country');
+      };
+
+      var CountryList = mongoose.model('CountryList', countryList);
+
+      module.exports = {
+        Application: Application,
+        Job: Job,
+        Country: CountryList
+      };
+]
+
 
 
 
