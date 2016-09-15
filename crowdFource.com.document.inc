@@ -98,16 +98,19 @@ db.getCollection('users').update({<field_name>:'vikas.bose'},{$set:{<field_name>
  #Fetch records from collection using filters
  db.location.find({"country":"India", "location1":"Chennai"}).pretty()
 
-Commit the code
+15/Sep/16
+https://www.youtube.com/watch?v=OlapNW9Jc8s 
+What is the difference between putting -g or not to install express js?
+It allow us to put express globally and you can access it. For installing the package we use the --save. After installing the express js using npm command, we have to run the express command directly so it will create the sekaleton of express framwork.
+If you check the package.json, there will be commond call start. So you need to run the "npm start" and it will run the server. But nothing is written on the page so it will not show anything.
 
+How to create package.json?
+using commond npm init, hit untill you will not get the 'yes'. By because we create this package.json, so if we install any package then we ca directly save using flag --save. Then we make changes on "main" the package.json, so that it will call directly to the app.js.
+Now we can install the --save express so it will add on the package.json file. And it will create the dependancy of express js.
 
+What is nodeman module?
+This is the node file, which restart the server whenever you make any chages in any file. SO it will helpful to user or developer to allow restart the system without any deal.
 
-
-admin.js
-Line# 363
-
-
-jobEdit.hjs [Ajax: 893]
 
 
 
