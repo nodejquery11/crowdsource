@@ -96,7 +96,7 @@ db.getCollection('users').update({<field_name>:'vikas.bose'},{$set:{<field_name>
  "location2":"BDC1 - 71 - Cunningham Road"}
 
  #Fetch records from collection using filters
- db.location.find({"country":"India", "location1":"Chennai"}).pretty()
+ db.location.find({"country":"India", "location1":"Chennai"}).pretty() //it will give you formated query string
 
 15/Sep/16
 https://www.youtube.com/watch?v=OlapNW9Jc8s 
@@ -110,6 +110,16 @@ Now we can install the --save express so it will add on the package.json file. A
 
 What is nodeman module?
 This is the node file, which restart the server whenever you make any chages in any file. SO it will helpful to user or developer to allow restart the system without any deal.
+
+How to manage the session in express js?
+There are few steps
+1. need to install the express js and express-session js 
+2. app = express();
+3. app.use(session({secret: 'anyvalue'})); //It is just session_start()
+4. initilize the session sess = req.session;
+   sess.email //$_SESSION['email'];
+   
+https://www.youtube.com/watch?v=eB9Fq9I5ocs&spfreload=5   
 
 
 
