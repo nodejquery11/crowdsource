@@ -121,6 +121,9 @@ There are few steps
    
 https://www.youtube.com/watch?v=eB9Fq9I5ocs&spfreload=5   
 
+Topic:
+resteasy chrome
+
 
 
 
